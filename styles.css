@@ -3,9 +3,7 @@
     max-width: 1170px;
     margin: auto;
     background-repeat: no-repeat;
-}
-.d-inline p-2 bg-dark text-white {
-    margin: 50px; 
+    font-family: 'Open Sans', 'Arial', sans-serif;
 }
 .iconWrapAqua {
     margin: 5px;
@@ -57,11 +55,55 @@
     top: 0;
     background-color: #e557a9;
 }
-.myFlex {
-    display: flex;
+nav {
+    width: 1170px;
+    height: 40px;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 ul {
-    width: 100px;
+    width: 250px;
     list-style: none;
     text-decoration: none;
+    
+}
+nav li > a {
+    color: #262626;
+}
+nav li:hover > a {
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+}
+nav > ul > li {
+    position: static !important;
+    margin-left: 3px;
+    float: left;
+}
+nav > ul > li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav > ul > li > ul {
+    width: 1170px;
+}
+nav > ul > li > ul > div {
+    display: flex;
+}
+nav > ul > li > ul > div ul li a{
+    display: block;
+    width: 100%;
+    text-transform: none;
+    padding: 7px 15px;
+    border-left: 1px solid #ddd;
+  }
+nav > ul > li > ul > div > ul > li > a{
+    display: block;
+    width: 100%;
+    text-transform: none;
+    padding: 7px 15px;
+    border-left: 1px solid #ddd;
 }
