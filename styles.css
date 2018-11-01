@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     font-family: 'Open Sans', 'Arial', sans-serif;
 }
+header{
+    margin: 10px;
+}
 .iconWrapAqua {
     margin: 5px;
     background-color: #76c1d8;
@@ -55,12 +58,13 @@
     top: 0;
     background-color: #e557a9;
 }
-nav {
-    width: 1170px;
+ nav {
+    width: 1172px;
     height: 40px;
     position: relative;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
+    margin-left: 4px;
 }
 ul {
     width: 250px;
@@ -76,11 +80,16 @@ nav li:hover > a {
     background-color: #333;
     text-decoration: none;
 }
-nav > ul > li {
+/* nav > ul > li {
     position: static !important;
     margin-left: 3px;
     float: left;
-}
+} */
+ nav > ul > li {
+    position: static !important;
+    margin-left: 3px;
+    display: inline;
+} 
 nav > ul > li > a {
     text-transform: uppercase;
     text-decoration: none;
@@ -88,7 +97,7 @@ nav > ul > li > a {
     padding: 10px 20px;
 }
 nav > ul > li > ul {
-    width: 1170px;
+    width: 100%;
 }
 nav > ul > li > ul > div {
     display: flex;
@@ -106,4 +115,26 @@ nav > ul > li > ul > div > ul > li > a{
     text-transform: none;
     padding: 7px 15px;
     border-left: 1px solid #ddd;
+} 
+.mySlider{
+    margin-right: 50px;
+    width: 1170px;
+}
+.slick-arrow{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    top: 50%;
+    z-index: 1;
+    background: black;
+    color: white;
+    line-height: 50px;
+    margin-top: -25px;
+}
+.nextSlide {
+    right: 1px;
+}
+.prevSlide {
+    left: 1px;
 }

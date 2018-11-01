@@ -10,6 +10,15 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Zadanie 1 / IAI WEBCAMP#5</title>
+  <!-- SLIDER SLICK -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+
+
+
 </head>
 <body class="body">
   <header>
@@ -42,12 +51,12 @@
       </div>
       </div>
     </div>
-    <nav > 
+    <nav> 
         <ul class="container-fluid">
             <li class="dropdown">
                 <a href="/" title="Oczy"  class="dropdown-toggle" data-toggle="dropdown">Oczy</a>
                 <ul class="dropdown-menu">
-                <div>
+                <div class="myTestDiv1">
                     <li>
                         <ul>
                             <li><a href="/" target="_self">Palety cieni</a></li>
@@ -276,14 +285,35 @@
         </ul>
     </nav>
   </header>
+  <div class="container">
+        <div class="row"></div>
+        <div class="row">
+      <div class="mySlider">
+        <div><img src="img/banner1.png" alt=""></div>
+        <div><img src="img/banner2.png" alt=""></div>
+        <div><img src="img/banner3.png" alt=""></div>
+      </div>
+      </div>
+      <div class="row">
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.mySlider').slick({
+                infinite: true,
+                speed: 500,
+                fade: true,
+                arrows: true,
+                autoplay: true,
+                nextArrow: '<div class="nextSlide"><i class="fa fa-arrow-right"></i></div>',
+                prevArrow: '<div class="prevSlide"><i class="fa fa-arrow-left"></i></div>'
+            });
+
+            $('nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+    </script>
 </body>
 </html>
-
-<script>
-    // DROPDOWN ON HOVER
-    $('nav li.dropdown').hover(function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-    }, function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-    });
-</script>
