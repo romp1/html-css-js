@@ -146,6 +146,9 @@ nav > ul > li > ul > div > ul > li > a{
     color: white;
     font-weight: bold;
 }
+.positionRelative{
+    position: relative;
+}
 .rotateUp{
     transform: rotate(-4deg);
 }
@@ -177,6 +180,18 @@ nav > ul > li > ul > div > ul > li > a{
 .productName {
     font-size: 14px;
     text-transform: uppercase;
+}
+.productName a{
+    font-size: 0.93em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #333;
+}
+.productName a:hover {
+    font-size: 0.93em;
+    text-transform: uppercase;
+    color: #76c1d8;
 }
 .productPrice {
     font-size: 12px;
@@ -223,6 +238,109 @@ div h2 a:hover {
     font-weight: 600;
     font-size: 14px;
 }
+.bannerBottomButton:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 20px 5px 20px;
+    background-color: #76c1d8;
+    border: none;
+    color:  #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
 div div div div img {
     max-width: 100%;
+}
+.producerBanners img{
+    max-width: 12%;
+}
+.newsletter {
+    height: 100px;
+    background-image: url("img/news_bg.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+form {
+    height: 100%;
+}
+.bgBannerTextNewsletter{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) rotate(4deg);
+    width: 200px;
+    text-align: center;
+    padding: 10px 45px 10px 45px;
+    background:#1f1f1f;
+    color: white;
+    font-weight: bold;
+}
+form input {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px 15px 10px 15px;
+}
+.newsletterButton {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 12px 70px 12px 70px;
+    background-color: #333;
+    border: none;
+    color:  #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.footer_links div {
+    margin-top: 50px;
+}
+.footer_links span {
+    font-size: 0.93em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+section div ul{
+    padding-left: 0px;
+}
+section div ul li{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+section div ul li a{
+    font-size: 0.93em;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #333;
+}
+section div ul li a:hover{
+    text-decoration: none;
+    list-style: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #76c1d8;
+}
+.footer_links > div > small {
+    display: block;
+    width: 60%;
+    margin-top: 15px;
+ }
+ footer a{
+    font-weight: 400;
+    color: #333;
+}
+footer a:hover{
+    text-decoration: none;
+    font-weight: 400;
+    color: #333;
 }
